@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .error-container {
+            text-align: center;
+            background-color:  #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .try-again-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .try-again-button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1 style="color: red;">Submission Error</h1>
+        <form action="/failure" method="post">
+            <button class="try-again-button" type="submit">Try again</button>
+        </form>
+    </div>
+</body>
+</html>
